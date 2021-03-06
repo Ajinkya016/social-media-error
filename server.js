@@ -1190,7 +1190,7 @@ http.listen(port, function () {
 						"message": "User has been logged out. Please login again."
 					});
 				} else {
-					users[user.id] = socketID;
+					users[user._id] = socketID;
 					result.json({
 						"status": "success",
 						"message": "Socket has been connected"
